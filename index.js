@@ -1,11 +1,19 @@
-// let pi = 3.14159;
-const PI = 3.14159
-let radius;
-let circumference;
+let x;
+let y = 5;
+let z = 9;
+let maximum;
+let minimum;
 
-radius = window.prompt("Enter the radius of a circle");
-radius = Number(radius);
+// x = Math.round(x);
+// x = Math.floor(x);
+// x = Math.ceil(x);
+// x = Math.pow(x, 2);
+// x = Math.sqrt(x);
+// x = Math.abs(x);
 
-circumference = 2 * PI * radius;
+// maximum = Math.max(x, y, z);
+// minimum = Math.min(x,y,z);
 
-console.log("The circumference is:", circumference)
+x = Math.PI;
+
+console.log(x);
