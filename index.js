@@ -1,7 +1,8 @@
-let students = 20;
-students = students + 1;
+let username;
 
-let extraStudents = students % 2;
+document.getElementById("myButton").onclick = function(){
 
-console.log(students)
-console.log(extraStudents)
+    username = document.getElementById("myText").value;
+    console.log(username);
+    document.getElementById("myLabel").innerHTML = "Hello " + username;
+}
