@@ -1,15 +1,16 @@
-let a;
-let b;
-let c;
+let count = 0
 
-document.getElementById("submitButton").onclick = function(){
-    a = document.getElementById("aTextBox").value;
-    a = Number(a);
+document.getElementById("decreaseBtn").onclick = function(){
+    count -= 1;
+    document.getElementById("countLabel").innerHTML = count;
+}
 
-    b = document.getElementById("bTextBox").value;
-    b = Number(b);
+document.getElementById("resetBtn").onclick = function(){
+    count = 0;
+    document.getElementById("countLabel").innerHTML = count;    
+}
 
-    c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));    
-
-    document.getElementById("cLabel").innerHTML = "Side C: " + c;
+document.getElementById("increaseBtn").onclick = function(){
+    count += 1;
+    document.getElementById("countLabel").innerHTML = count;    
 }
