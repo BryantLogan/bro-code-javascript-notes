@@ -1,9 +1,5 @@
-let fullName = "Bryant Logan";
-let firstName;
-let lastName;
+let userName = "bryant";
 
-firstName = fullName.slice(0, fullName.indexOf(" "));
-lastName = fullName.slice(fullName.indexOf(" ") + 1);
+let letter = userName.charAt(0).toUpperCase().trim();
 
-console.log(firstName)
-console.log(lastName)
+console.log(letter)
