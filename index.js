@@ -1,5 +1,8 @@
-let userName = "bryant";
+let online = false;
 
-let letter = userName.charAt(0).toUpperCase().trim();
-
-console.log(letter)
+if(online){
+    console.log("You are online!");
+}
+else{
+    console.log("You are offline!");
+}
