@@ -1,18 +1,9 @@
-let userName = "Bryant Logan";
-let phoneNumber = "123-456-7890";
+let fullName = "Bryant Logan";
+let firstName;
+let lastName;
 
-console.log(userName.length);
+firstName = fullName.slice(0, fullName.indexOf(" "));
+lastName = fullName.slice(fullName.indexOf(" ") + 1);
 
-// let firstLetter = userName.charAt(0)
-// console.log(userName.charAt(0));
-// console.log(userName.indexOf("y"));
-// console.log(userName.lastIndexOf("a"))
-
-
-// userName = userName.trim();
-
-// userName = userName.toUpperCase();
-// userName = userName.toLowerCase();
-
-phoneNumber = phoneNumber.replaceAll("-", "");
-console.log(phoneNumber);
+console.log(firstName)
+console.log(lastName)
