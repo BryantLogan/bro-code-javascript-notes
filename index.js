@@ -11,6 +11,7 @@ document.getElementById("resetBtn").onclick = function(){
 }
 
 document.getElementById("increaseBtn").onclick = function(){
+    
     count += 1;
     document.getElementById("countLabel").innerHTML = count;    
 }
