@@ -1,7 +1,7 @@
-let userName = "";
+let userName;
 
-while(userName == "" || userName == null){
-    userName = window.prompt("Enter your name");
-}
+do{
+    userName = window.prompt("Enter you name");
+}while(userName == "")
 
-console.log("Hello", userName)
+console.log("Hello", userName);
