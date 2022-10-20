@@ -1,27 +1,21 @@
-document.getElementById("myButton").onclick = function(){
+let grade = 70;
 
-    const myCheckBox = document.getElementById("myCheckBox");
-    const visaBtn = document.getElementById("visaBtn");
-    const mastercardBtn = document.getElementById("mastercardBtn");
-    const paypalBtn = document.getElementById("paypalBtn");
-
-    if(myCheckBox.checked){
-        console.log("You are subscribed")
-    }
-    else{
-        console.log("You are NOT subscribed!")
-    }
-
-    if(visaBtn.checked){
-        console.log("You are paying with a Visa!");
-    }
-    else if (mastercardBtn.checked){
-        console.log("You are paying with Mastercard!");
-    }
-    else if (paypalBtn.checked){
-        console.log("You are paying with Paypal!")
-    }    
-    else{
-        console.log("You must select a payment type!")
-    }
+switch(true){
+    case grade >= 90:
+        console.log("You did great!");
+        break;
+    case grade >= 80:
+        console.log("You did good!");
+        break;
+    case grade >= 70:
+        console.log("You did okay!!");
+        break;
+    case grade >= 60:
+        console.log("You passed... barely!");
+        break;
+    case grade > 60:
+        console.log("You FAILED!");
+        break;
+    default:
+        console.log(grade, "is not a letter grade!")           
 }
