@@ -1,7 +1,9 @@
-let userName;
+// for(let i = 10; i <= 10; i += 1){
+//     console.log(i);
+// }
 
-do{
-    userName = window.prompt("Enter you name");
-}while(userName == "")
+for(let i = 10; i > 0; i -= 1){
+    console.log(i);
+}
 
-console.log("Hello", userName);
+console.log("HAPPY NEW YEAR!");
