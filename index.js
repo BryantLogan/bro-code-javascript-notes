@@ -1,9 +1,6 @@
-// for(let i = 10; i <= 10; i += 1){
-//     console.log(i);
-// }
-
-for(let i = 10; i > 0; i -= 1){
+for(let i = 1; i <= 20; i += 1){
+    if(i == 13){
+        continue;
+    }
     console.log(i);
 }
-
-console.log("HAPPY NEW YEAR!");
