@@ -1,3 +1,6 @@
+// return = returns a value back to the place
+//          where you invoked a function
+
 let area;
 let width;
 let height;
