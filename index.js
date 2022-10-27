@@ -1,11 +1,6 @@
-let userName = "bryant";
-let items = 3;
-let total = 75;
+let myNum = 123456.789;
 
-let text =
-`Hello ${userName}<br>
-You have ${items} items in your cart<br>
-Your total is $${total}<br>`;
+myNum = myNum.toLocaleString("en-US", {style: "currency", currency: "USD"});
 
-// console.log(text);
-document.getElementById("myLabel").innerHTML = text;
+
+console.log(myNum);
