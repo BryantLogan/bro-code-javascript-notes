@@ -1,12 +1,15 @@
 
-let fruits = ["apples", "oranges", "bananas"];
-let vegetables = ["carrots", "onions", "potatoes"];
-let meats = ["eggs", "chicken", "fish"];
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let userName = "Bryant Logan";
 
-let groceryList = [fruits, vegetables, meats];
+// console.log(numbers);
+// console.log(...numbers);
 
-for(let list of groceryList){
-    for(let food of list){
-        console.log(food);
-    }
-}
+// console.log(userName);
+// console.log(...userName);
+
+let class1 = ["Spongebob", "patrick", "Sandy"];
+let class2 = ["Squidward", "Mr.Krabs", "Plankton"];
+
+class1.push(...class2);
+console.log(class1);
