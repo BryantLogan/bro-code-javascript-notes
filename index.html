@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Number Guessing Game</h1>
-    <p>Pick a # between 1 - 10</p>
-    <label>Enter a guess</label>
-    <input id="guessField">
-    <input type="submit" id="submitButton">
+    <label>Enter a temperature:</label><br>
+    <input type="text" id="textBox"><br>
+    <label>convert to:</label><br>
+    <input type="radio" id="cButton" name="unit">
+    <label>Celsius</label><br>
+    <input type="radio" id="fButton" name="unit">
+    <label>Fahrenheit</label><br>
+
+    <button type="button" id="submitButton">Submit</button><br>
+    <label id="tempLabel"></label>
     <script src="index.js"></script>
 </body>
 </html>
