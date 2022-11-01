@@ -1,22 +1,15 @@
 
-let a = 1;
-let b = 2;
-let c = 3;
-let d = 4;
-let e = 5;
+sum(2, 3, displayDom);
 
-// console.log(sum(1, b));
+function sum(x, y, callBack){
+    let result = x + y
+    callBack(result);
+}
 
-// function sum(a, b){
-//     return a + b
-// }
+function displayConsole(output){
+    console.log(output);
+}
 
-console.log(sum(a, b, c, d, e));
-
-function sum(...numbers){
-    let total = 0;
-    for(let number of numbers){
-        total += number
-    }
-    return total
+function displayDom(output){
+    document.getElementById("myLabel").innerHTML = output;
 }
