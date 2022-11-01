@@ -1,11 +1,5 @@
-let fruits = ["apple", "orange", "banana"];
+let prices = [5, 10, 15, 20, 25];
 
-console.log(fruits);
-console.log(fruits[0]);
-
-let length = fruits.length;
-let index = fruits.indexOf("apple")
-
-
-console.log(length);
-console.log(index);
+for(let price of prices){
+    console.log(price);
+}
