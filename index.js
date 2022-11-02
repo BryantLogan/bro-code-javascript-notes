@@ -1,12 +1,6 @@
 
-let count = 0;
+let grades = [100, 50, 90, 60, 80, 70];
 
-document.getElementById("increaseButton").onclick = function(){
-    count += 1;
-    document.getElementById("myLabel").innerHTML = count;
-}
+grades.sort((x, y) =>  y - x);
 
-document.getElementById("decreaseButton").onclick = function(){
-    count -= 1;
-    document.getElementById("myLabel").innerHTML = count;
-}
+grades.forEach((element) => console.log(element));
