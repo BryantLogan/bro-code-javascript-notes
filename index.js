@@ -1,22 +1,18 @@
 
-let cards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+let userName = "Bryant";
+let userInbox = 0;
 
-shuffle(cards);
+login();
 
-cards.forEach(card => console.log(card));
+function login(){
+    displayUserName();
+    displayUserInbox();
 
-function shuffle(array){
-    let currentIndex = array.length;
-
-    while(currentIndex != 0){
-        let randomIndex = Math.floor(Math.random() * array.length)
-        currentIndex -= 1;
-
-        let temp = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temp;
-
+    function displayUserName(){
+        console.log(`Welcome ${userName}`);
     }
 
-    return array;
+    function displayUserInbox(){
+        console.log(`You have ${userInbox} new messages`);
+    }
 }
