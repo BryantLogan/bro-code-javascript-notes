@@ -1,18 +1,14 @@
 
-let userName = "Bryant";
-let userInbox = 0;
+const store = new Map([
+    ["t-shirt", 20],
+    ["jeans", 30],
+    ["socks", 10],
+    ["underwear", 50]
+]);
 
-login();
+let shoppingCart = 0;
 
-function login(){
-    displayUserName();
-    displayUserInbox();
+shoppingCart += store.get("t-shirt");
+console.log(shoppingCart)
 
-    function displayUserName(){
-        console.log(`Welcome ${userName}`);
-    }
-
-    function displayUserInbox(){
-        console.log(`You have ${userInbox} new messages`);
-    }
-}
+store.forEach((value, key) => console.log(`${key} $${value}`))
