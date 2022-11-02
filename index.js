@@ -1,13 +1,12 @@
 
-let grades = [100, 50, 90, 60, 80, 70];
+let count = 0;
 
-grades = grades.sort(ascendingSort);
-grades.forEach(print);
-
-function ascendingSort(x, y){
-    return x - y;
+document.getElementById("increaseButton").onclick = function(){
+    count += 1;
+    document.getElementById("myLabel").innerHTML = count;
 }
 
-function print(element){
-    console.log(element)
+document.getElementById("decreaseButton").onclick = function(){
+    count -= 1;
+    document.getElementById("myLabel").innerHTML = count;
 }
