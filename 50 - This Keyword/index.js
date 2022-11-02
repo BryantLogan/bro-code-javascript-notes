@@ -1,3 +1,6 @@
+// this =   reference to a particular object
+//          the reference depends on the immediate context
+
 const car1 = {
     model:"Mustang",
     color: "red",
