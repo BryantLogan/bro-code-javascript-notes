@@ -1,3 +1,6 @@
+// super =  Refers to the parent Class.
+//          Commonly used to invoke constructor of a parent class
+
 class Animal{
     constructor(name, age){
         this.name = name;
@@ -16,7 +19,7 @@ class Rabbit extends Animal{
 class Fish extends Animal{
     constructor(name, age, swimSpeed){
         super(name, age);
-        this.swimSpeed = swimSpeed;
+        this.runSpeed = swimSpeed;
     }
 }
 
@@ -24,7 +27,7 @@ class Hawk extends Animal{
 
     constructor(name, age, flySpeed){
         super(name, age);
-        this.flySpeed = flySpeed;
+        this.runSpeed = flySpeed;
     }
 }
 
