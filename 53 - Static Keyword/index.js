@@ -1,3 +1,6 @@
+// static = belongs to the Class, not the objects
+//          properties: useful for caches, fixed-configuration
+//          methods:    useful for utility functions
 
 class Car{
 
