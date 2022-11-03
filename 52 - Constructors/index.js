@@ -1,3 +1,6 @@
+// constructor =    a special method of a class,
+//                  accepts arguments and assigns properties
+
 class Student{
 
     constructor(name, age, gpa){
