@@ -1,3 +1,9 @@
+//  get =   binds an object property to a function
+//          when that property is accessed
+// 
+//  set =   binds an object property to a function
+//          when that property is assigned a value
+
 class Car{
     constructor(power){
         this._gas = 25;
@@ -22,7 +28,7 @@ class Car{
 
 let car = new Car(400);
 
-car.gas = 49;
+car.gas = 100;
 
 console.log(car.power);
 console.log(car.gas);
