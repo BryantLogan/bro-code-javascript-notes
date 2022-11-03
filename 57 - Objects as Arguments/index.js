@@ -1,4 +1,3 @@
-
 class Car{
 
     constructor(model, year, color){
