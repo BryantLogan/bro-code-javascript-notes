@@ -1,3 +1,7 @@
+// class =  a blueprint for creating objects
+//          define what properties and methods they have
+//          use a constructor for unique properties
+
 class Player{
     score = 0;
 
