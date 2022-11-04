@@ -1,3 +1,4 @@
+//  async = makes a funtion return a Promise
 
 async function loadFile(){
     let fileLoaded = true;
