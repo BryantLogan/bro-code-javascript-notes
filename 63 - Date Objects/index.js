@@ -1,3 +1,5 @@
+// The Date object is used to work with dates & times
+
 
 // let date = new Date(0);
 // let date = new Date(2023, 0, 1, 2, 3, 4, 5);
