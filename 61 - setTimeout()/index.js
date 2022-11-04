@@ -1,3 +1,6 @@
+// setTimeout() =   invokes a function after a number of miliseconds
+//                  asynchronous function (doesn't pause execution of)
+
 
 let item = "cryptocurrency";
 let price = 420.69;
