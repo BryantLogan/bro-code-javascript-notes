@@ -1,8 +1,6 @@
 
-console.time("Response time");
+const wait = time => new Promise(resolve => {
+    setTimeout(resolve, time);
+})
 
-// alert("Click the OK Button");
-
-setTimeout(() => console.log("Hello"), 3000);
-// end
-console.timeEnd("Response time");
+wait(3000).then(() => console.log("Thanks for waiting"))
