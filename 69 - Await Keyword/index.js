@@ -1,3 +1,4 @@
+// await = makes an async function wait for a Promise
 
 async function loadFile(){
     let fileLoaded = false;
