@@ -1,3 +1,6 @@
+// setInterval() =  invokes a function repeatedly after a number of milliseconds
+//                  asynchronous function (doesn't pause existing function)
+
 let count = 0;
 let max = window.prompt("Count up to what number?");
 max = Number(max);
