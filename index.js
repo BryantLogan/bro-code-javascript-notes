@@ -1,23 +1,10 @@
+// import {PI, getCircumference, getArea} from "./math_util.js"
 
-async function loadFile(){
-    let fileLoaded = false;
+import * as MathUtil from "./math_util.js"
+console.log(MathUtil.PIPI);
 
-    if(fileLoaded){
-        return "File loaded";
-    }
-    else{
-        throw "File not loaded";
-    }
-}
+let circumference = MathUtil.getCircumference(10);
+console.log(circumference);
 
-async function startProcess(){
-    try{
-        let message = await loadFile();
-        console.log(message)
-    }
-    catch(error){
-        console.log(error)
-    }
-}
-
-startProcess();
+let area = MathUtil.getArea(10);
+console.log(area);
