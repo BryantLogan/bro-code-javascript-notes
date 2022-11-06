@@ -1,3 +1,7 @@
+// add/change HTML elements
+// .innerhHTML (vulnerable to XSS attacks)
+// .textContent (more secure)
+
 
 // const nameTag = document.createElement("h1");
 // nameTag.innerHTML = window.prompt("Enter your name");
