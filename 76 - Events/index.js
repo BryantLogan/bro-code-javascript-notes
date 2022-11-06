@@ -1,3 +1,5 @@
+// Event =  Something the user or browser does
+
 // const element = document.getElementById("myButton");
 // element.onclick = doSomething;
 
