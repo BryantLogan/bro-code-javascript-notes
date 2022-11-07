@@ -1,28 +1,24 @@
 
-const myDiv = document.getElementById("myDiv");
-window.addEventListener("keydown", move);
-let x = 0;
-let y = 0;
+const myButton = document.getElementById("myButton");
+const myAnimation = document.getElementById("myDiv");
 
-function move(event){
-    switch(event.key){
-        case "ArrowDown":
-            y += 5;
-            myDiv.style.top = y + "px";
-            break;
-        case "ArrowUp":
-            y -= 5;
-            myDiv.style.top = y + "px";
-            break;
-        case "ArrowRight":
-            x += 5;
-            myDiv.style.left = x + "px";
-            break;
-        case "ArrowLeft":
-            x -= 5;
-            myDiv.style.left = x + "px";
-            break;
-        default:
-            break;    
+myButton.addEventListener("click", begin);
+
+function begin(){
+    let timerId = null;
+    let scaleX = 1; //100%
+    let scaleY = 1;
+
+    timerId = setInterval(frame, 5);
+
+    function frame(){
+        if(scaleX >= 2 || scaleY >= 2){
+            clearInterval(timerId);
+        }
+        else{
+            scaleX += 0.01;
+            scaleY += 0.01;
+            myAnimation.style.transform = "scale("+scaleX+","+scaleY+")";
+        }
     }
 }
