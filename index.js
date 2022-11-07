@@ -1,25 +1,11 @@
-// const element = document.getElementById("myButton");
-// element.onclick = doSomething;
+const innerDiv = document.getElementById("innerDiv");
+const outerDiv = document.getElementById("outerDiv");
 
-// const element = document.body;
-// element.onload = doSomething();
 
-// const element = document.getElementById("myText");
+innerDiv.addEventListener("click", changeBlue);
+outerDiv.addEventListener("click", changeBlue, true);
 
-const element = document.getElementById("myDiv");
-
-// element.onmouseover = doSomething;
-// element.onmouseout = doSomethingElse;
-
-element.onmousedown = doSomething;
-element.onmouseup = doSomethingElse;
-
-function doSomething(){
-    // alert("You did something!");
-    element.style.backgroundColor = "red";
-}
-
-function doSomethingElse(){
-    // alert("You did something!");
-    element.style.backgroundColor = "lightgreen";
+function changeBlue(){
+    alert(`You selected ${this.id}`);
+    this.style.backgroundColor = "lightblue";
 }
