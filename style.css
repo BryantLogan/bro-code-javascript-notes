@@ -1,6 +1,4 @@
-#myDiv{
-    background-color: lightgreen;
-    width: 100px;
-    height: 100px;
-    position: relative;
+#myCanvas{
+    border: 1px solid black;
+    background-color: skyblue;
 }
